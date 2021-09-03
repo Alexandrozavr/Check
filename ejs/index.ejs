@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>База данных</title>
+</head>
+<body>z
+<div id="app">
+    <div class="row">
+        <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action db_item" v-for="db in dbs" @click="getLists(db.id)"> {{db.title}}</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="list-group-item list-group-item-action list_item" v-for="list in lists"> {{list.title}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/vue@3.2.2/dist/vue.global.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
