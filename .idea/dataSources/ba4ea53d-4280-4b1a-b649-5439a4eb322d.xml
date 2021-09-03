@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="MySQL - hopitals_db@localhost">
   <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.23">
-    <root id="1">
-      <ServerVersion>10.4.17</ServerVersion>
-      <DefaultEngine>InnoDB</DefaultEngine>
-      <DefaultCasing>lower/lower</DefaultCasing>
-    </root>
+    <root id="1"/>
     <schema id="2" parent="1" name="hopitals_db">
       <Current>1</Current>
       <Collation>utf8mb4_general_ci</Collation>
